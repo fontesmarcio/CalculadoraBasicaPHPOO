@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Calculadora Básica PHP</title>
+</head>
+
+<body>
+
+<div class="container">
+
+	<h1>Calculadora Básica PHP</h1>
+
+	<form action="funcionalidades/calcular.php" method="post">
+
+		<div class="form-wraper num2">
+			<span>Primeiro número:</span>
+			<input type="text" name="numero1">
+		</div>
+
+
+		<div class="form-wraper num2">
+			<span>Segundo número:</span>
+			<input type="text" name="numero2">
+		</div>
+
+		<br>
+
+		<p>Operação:</p>
+		<div class="operacoes">
+			<ul>
+				<li>
+					<label>
+						<input type="radio" name="operacao" value="somar">
+						Somar
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="radio" name="operacao" value="subtrair">
+						Subtrair
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="radio" name="operacao" value="multiplicar">
+						Multiplicar
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="radio" name="operacao" value="dividir">
+						Dividir
+					</label>
+				</li>
+			</ul>
+		</div> <!-- operacoes -->
+
+		<br>
+
+		<input class="button" type="submit" value="Calcular">
+
+	</form>
+
+</div> <!-- container -->
+
+</body>
+
+</html>
+
